@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./components/Counter";
+import Counter2 from "./components/Counter2";
+import Kiosk from "./components/Kiosk";
+import Todo from "./components/todo";
+import TodoInput from "./components/todo/TodoInput";
+import ZCounter from "./components/zcounter";
+import ZKiosk from "./components/zkiosk";
+import SampleLayout from "./layout/SampleLayout";
+import TemplatePage from "./layout/TemplatePage";
+
 
 function App() {
+
+  const obj = {title:'Title', content:'Content'}
+
+
+  console.log(obj['title'])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Todo></Todo>      
     </div>
   );
 }
