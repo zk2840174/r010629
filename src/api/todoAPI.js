@@ -14,3 +14,9 @@ export const postTodo = async (todo) => {
 
   return res.data
 }
+
+export const getTodo = async (tno) => {
+  const res = await axios.get(`http://localhost:8080/api/todos/${tno}`)
+
+  return res.data
+}
